@@ -1,0 +1,12 @@
+[submodule "DocumentationTool"]
+	path = DocumentationTool
+	url = https://github.com/DietmarHeinke/DocumentationTool.git
+	branch = main
+[submodule "OKDE4DEMCMC"]
+	path = OKDE4DEMCMC
+	url = https://github.com/DietmarHeinke/OKDE4DEMCMC.git
+	branch = main
+[submodule "DE_MCMC"]
+	path = DE_MCMC
+	url = https://github.com/DietmarHeinke/DE_MCMC.git
+	branch = master
