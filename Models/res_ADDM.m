@@ -1,69 +1,75 @@
-function [rt,res,xS,xI] = res_ADDM(param,iCond)
-T = param(1);
-
-if iCond == 2
-    F = -param(2);
-   rateS = param(4);
-else
-    F = param(2);
-   rateS = param(3);
-end
-
-sigma = param(5);
-boundary = param(6);
-
-xS(1) = 0;
-xI(1) = 0;
-
-for t = 1:10000
-    
-    xS(t+1) = xS(t) + rateS + sigma*randn;
-    
-    % If xS = 0, attention focuses on both target and flanker.
-    % If xS=1 attention focus on target only
-    target(t) =  T * 0.5 * (xS(t)+1);
-    
-    % If attention focused on target, flanker does not influence drift rate.
-    % xS=1 flanker does not influence identification.
-    flanker(t) = F * (1-0.5*(xS(t)+1));
-    
-    rateI(t) = target(t) + flanker(t);
-    xI(t+1) = xI(t) + rateI(t) + sigma*randn;
-    
-    if xS(t+1) >= boundary || xS(t+1) <= -boundary
-        break
-    end
-    
-    
-end
-rt = t;
-
-if xI(t+1) >= 0
-    res = 1;
-else
-    res = 0;
-end
-
-%      subplot(2,1,1);
-%  plot(xS);
-%  title('xS');
-%  subplot(2,1,2);
-%  plot(xI);
-%  title('xI');
-%  yline(boundary);
-%  hold on
-% yline(-boundary)
-%  drawnow
-%   WaitSecs(5);
-%  clf
-end
+function [rt,acc, eviI, eviS] = res_addm(timesteps,target, distractor, boundary, none_decision_t, sigma, rateS, stepsize)
 %
-% %if showPlot == 1
-% subplot(2,1,1);
-% plot(xS);
-% title('xS');
-% subplot(2,1,2);
-% plot(xI);
-% title('xI');
-% %end
+%   [rt,acc, evidence] = res_addm(timesteps,boundary, none_decision_t, sigma, rate, stepsize)
+%
+
+flagSel = 0;
+
+if nargout > 2
+
+    eviI = nan(timesteps,1);
+    eviS = nan(timesteps,1);
+    eviS(1) = 0;
+    eviI(1) = 0;
+    for i=2:timesteps
+        if flagSel == 0
+            eviS(i) = eviS(i-1)+  (stepsize * rateS + sqrt(stepsize) * sigma * randn);
+            if abs(eviS(i)) > 1
+                flagSel = 1;
+                eviS(i) = sign(eviS(i));
+            end
+        end
+        rate =  target * 0.5 * (eviS(i)+1) +  distractor * (1-0.5 * (eviS(i)+1));
+
+        eviI(i) = eviI(i-1) + stepsize * rate + sqrt(stepsize) * sigma * randn;
+
+        if eviI(i) < -boundary || eviI(i) > boundary
+            break
+        end
+    end
+
+
+    %    rt1 = min([find(isnan(evidence),1) timesteps]);
+    rt = i*stepsize + none_decision_t;
+
+    if eviI(i) >= boundary
+        acc = 1;
+    else
+        acc = 0;
+    end
+else
+    eviI = 0;
+    eviS = 0;
+    i = 0;
+    while eviI > -boundary && eviI < boundary && i < timesteps
+
+        if flagSel == 0
+            eviS = eviS +  (stepsize*rateS + sqrt(stepsize)*sigma*randn);
+            if abs(eviS) > 1
+                flagSel = 1;
+                eviS = sign(eviS);
+
+            end
+        end
+
+        rate =  target * 0.5 * (eviS+1) +  distractor * (1-0.5 * (eviS+1));
+
+
+        eviI = eviI + stepsize * rate + sqrt(stepsize) * sigma * randn;
+        i = i + 1;
+    end
+
+
+
+    rt = i*stepsize + none_decision_t;
+
+    if eviI > boundary
+        acc = 1;
+    else
+        acc = 0;
+    end
+end
+
+
+end
 
