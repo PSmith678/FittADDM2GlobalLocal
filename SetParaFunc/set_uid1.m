@@ -41,9 +41,8 @@ ret.para_rules = [];
 
 % Best parameter
 ret.best.comments = '';
-paramBounds = [0 0 0 .001;...
-    10 1 2 1.8];
-
+paramBounds = [0.005, 0.005, 0.005, 0.005, 0.005, 0.005, 0.005, 0.005, 0.0045, 0.0045, 1.75, 100, 0.007; ...
+                    0.035, 0.035, 0.035, 0.035, 0.015, 0.015, 0.015, 0.015, 0.0099, 0.0099, 5.75, 180, 0.009];
 for ibounds = 1:5
 
     ret.best.bounds{ibounds}.type = 'uniform';

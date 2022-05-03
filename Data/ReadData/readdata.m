@@ -1,6 +1,6 @@
 function realDat = readdata(participantNumber,coherenceCondition)
 
-%cd './Data/Data'
+%cd '.\Data\Data'
 
 % Column Identifiers
 

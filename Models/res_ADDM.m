@@ -1,4 +1,4 @@
-function [rt,acc, eviI, eviS] = res_addm(timesteps,target, distractor, boundary, none_decision_t, sigma, rateS, stepsize)
+function [rt,acc, eviI, eviS] = res_ADDM(timesteps,target, distractor, boundary, none_decision_t, sigma, rateS, stepsize, bias, reselect)
 %
 %   [rt,acc, evidence] = res_addm(timesteps,boundary, none_decision_t, sigma, rate, stepsize)
 %
@@ -9,22 +9,32 @@ if nargout > 2
 
     eviI = nan(timesteps,1);
     eviS = nan(timesteps,1);
-    eviS(1) = 0;
+    eviS(1) = bias;
     eviI(1) = 0;
     for i=2:timesteps
         if flagSel == 0
-            eviS(i) = eviS(i-1)+  (stepsize * rateS + sqrt(stepsize) * sigma * randn);
+            eviS(i) = eviS(i-1) + (stepsize * rateS + sqrt(stepsize) * sigma * randn);
             if abs(eviS(i)) > 1
                 flagSel = 1;
-                eviS(i) = sign(eviS(i));
+                eviS(i) = double(sign(eviS(i))); 
             end
+        else 
+            eviS(i) = eviS(i-1);
         end
+       
+
         rate =  target * 0.5 * (eviS(i)+1) +  distractor * (1-0.5 * (eviS(i)+1));
 
         eviI(i) = eviI(i-1) + stepsize * rate + sqrt(stepsize) * sigma * randn;
-
+        
         if eviI(i) < -boundary || eviI(i) > boundary
             break
+        end
+        if eviS(i) <= -1
+            eviS(i) = bias;
+            eviI(i) = 0;
+            flagSel = 0;
+            rateS = rateS + reselect;
         end
     end
 
@@ -37,9 +47,10 @@ if nargout > 2
     else
         acc = 0;
     end
+
 else
     eviI = 0;
-    eviS = 0;
+    eviS = bias;
     i = 0;
     while eviI > -boundary && eviI < boundary && i < timesteps
 
@@ -48,8 +59,8 @@ else
             if abs(eviS) > 1
                 flagSel = 1;
                 eviS = sign(eviS);
-
-            end
+         
+            end 
         end
 
         rate =  target * 0.5 * (eviS+1) +  distractor * (1-0.5 * (eviS+1));
@@ -57,6 +68,13 @@ else
 
         eviI = eviI + stepsize * rate + sqrt(stepsize) * sigma * randn;
         i = i + 1;
+
+       if eviS <= -1
+            eviS = bias;
+            eviI = 0;
+            flagSel = 0;
+            rateS = rateS + reselect;
+       end
     end
 
 

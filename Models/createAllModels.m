@@ -6,7 +6,7 @@ i = 1;
 Nmodel{i}.docu = 'three-parameter DDM using dm-tool';
 Nmodel{i}.nid = i;
 % needs to match the run_xxxx-mfile
-Nmodel{i}.name= 'DDMpdf';
+Nmodel{i}.name= 'ADDM';
 
 Nmodel{i}.variable2condition= [0.0070    0.0030  ];
 %       (1) boundary separation (a)
@@ -21,7 +21,7 @@ i = 2;
 Nmodel{i}.docu = 'three-parameter DDM using simulation';
 Nmodel{i}.nid = i;
 % needs to match the run_xxxx-mfile
-Nmodel{i}.name= 'DDMsim';
+Nmodel{i}.name= 'ADDM';
 
 Nmodel{i}.variable2condition= [0.0070    0.0030  ];
 %       (1) boundary separation (a)
