@@ -1,0 +1,24 @@
+Average of SCor	Column Labels						
+	Global		Global Total	Local		Local Total	Grand Total
+Row Labels	GS	LS		GS	LS		
+cong	1.00	1.00	1.00	1.00	1.00	1.00	1.00
+incong	1.00	0.88	0.94	0.94	0.94	0.94	0.94
+Grand Total	1.00	0.94	0.97	0.97	0.97	0.97	0.97
+							
+							
+							
+ggsc_score	ggsi_score	glsc_score	glsi_Score	lgsc_Score	lgsi_Score	llsc_Score	llsi_Score
+1.00	1.00	1.00	0.88	1.00	0.94	1.00	0.94
+452.7	460.1	489.3	621.4	494.4	465.6	564.3	534
+							
+							
+							
+rt	SDev	CCor	UCor				
+452.7	45.77	15	16	0	0	0	
+460.1	69.52	15	16	0	0	1	
+489.3	95.93	16	16	0	1	0	
+621.4	110.9	13	14	0	1	1	
+494.4	70.5	15	16	1	0	0	
+465.6	67.5	14	15	1	0	1	
+564.3	138.1	16	16	1	1	0	
+534	66.43	14	15	1	1	1	

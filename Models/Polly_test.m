@@ -1,21 +1,32 @@
-param = [0.015, 0.025, 0.025, 0.015, 0.01, 0.01, 0.01, 0.01, 0.004, 0.0042, 2, 110, 0.0085];
+param = [0.025, 0.025, 0.025, 0.025, 0.01, 0.01, 0.01, 0.01, 0.01, 0.02, 2, 110, 0.0085];
 simDat = run_ADDM(param, 1000);
 
 %[rate1, rate2, rate3, rate4, bias1, bias2, bias3, bias4,
 %      B1, B2, threshold, non-decision time, reselect]
 
-
+figure()
 yTimes = nan(1,8);
 for iCond = 1:8
     yTimes(iCond) = mean(simDat(iCond).rt_res1);
 end 
+gray = '#D3D3D3';
+blue = '#0072BD';
+colours = {gray, gray, blue, gray, gray, gray, gray, blue};
 subplot(2,1,1)
 xlim([0 9])
 xTimes = 1:8;
-bar(xTimes, yTimes)
+hold on 
+for i = 1:8
+    b = bar(xTimes(i), yTimes(i));
+    set(b, 'FaceColor', colours{i})
+end
+
 xlabel('Condition Number')
 ylabel('Mean Reaction Times (ms)')
-title('Mean Reaction Times of Correct Responses for each Condition for 1000 trials')
+ylim([0 800])
+title('Mean Reaction Times of Correct Responses for each Condition for 10000 trials')
+
+
 
 yError = nan(1,8);
 for iCond = 1:8
@@ -24,11 +35,18 @@ end
 subplot(2,1,2)
 xlim([0 9])
 xError = 1:8;
-bar(xError, yError)
+hold on
+for i = 1:8
+    b1 = bar(xError(i), yError(i));
+    set(b1, 'FaceColor', colours{i})
+    
+end
 xlabel('Condition Number')
 ylabel('Number of Errors')
-title('Number of Errors for each Condition for 1000 trials')
+ylim([0 200])
+title('Number of Errors for each Condition for 10000 trials')
 
+sgtitle('Similar Attentional-Bias Parameters')
 %yTimes = nan(1,8);
 %for iCond = 1:8
    % yTimes(iCond) = median(simDat(iCond).rt_res1);
