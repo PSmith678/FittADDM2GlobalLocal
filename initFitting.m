@@ -8,7 +8,7 @@ cd ..
 home = fileparts(mfilename('fullpath'));
 addpath(fullfile(home, 'DocumentationTool'));
 initDocuTool();
-
-addpath(fullfile(home, 'OKDE4DEMCMC'));
+h1 = genpath('OKDE4DEMCMC');
+addpath(h1);
 
 end

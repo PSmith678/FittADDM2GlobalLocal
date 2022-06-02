@@ -137,13 +137,13 @@ for k = 1:nConditions
     simDat(k).delta = 1;
 
 
-    nTotalSim = length(simDat(k).rt_res1) + length(simDat(k).rt_res0);
-    nSim1 = length(simDat(k).rt_res1);
-    pSim1 = nSim1 / nTotalSim;
-    simDat(k).pdf1 = pSim1 * evaluateDistributionAt(kde_rt_res1.pdf.Mu, kde_rt_res1.pdf.w, kde_rt_res1.pdf.Cov, 1:simDat(k).tmax);
-    nSim0 = length(simDat(k).rt_res0);
-    pSim0 = nSim0 / nTotalSim;
-    simDat(k).pdf0 = pSim0 * evaluateDistributionAt(kde_rt_res0.pdf.Mu, kde_rt_res0.pdf.w, kde_rt_res0.pdf.Cov, 1:simDat(k).tmax);
+  %  nTotalSim = length(simDat(k).rt_res1) + length(simDat(k).rt_res0);
+  %  nSim1 = length(simDat(k).rt_res1);
+  %  pSim1 = nSim1 / nTotalSim;
+  %  simDat(k).pdf1 = pSim1 * evaluateDistributionAt(kde_rt_res1.pdf.Mu, kde_rt_res1.pdf.w, kde_rt_res1.pdf.Cov, 1:simDat(k).tmax);
+  %  nSim0 = length(simDat(k).rt_res0);
+  %  pSim0 = nSim0 / nTotalSim;
+  %  simDat(k).pdf0 = pSim0 * evaluateDistributionAt(kde_rt_res0.pdf.Mu, kde_rt_res0.pdf.w, kde_rt_res0.pdf.Cov, 1:simDat(k).tmax);
     %     figure
     %     plot(evaluateDistributionAt(kde_rt_res1.pdf.Mu, kde_rt_res1.pdf.w, kde_rt_res1.pdf.Cov, 1:50000));
     %

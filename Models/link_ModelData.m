@@ -1,6 +1,6 @@
 function [retData, para] = link_ModelData(model, selector)
 
-[retData] = readdata();
+[retData] = readdata(selector);
 
 %if length(retData) ~= size(model.variable2condition,1)
 %    error('Data does not match to model specification');

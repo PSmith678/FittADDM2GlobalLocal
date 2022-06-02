@@ -47,8 +47,8 @@ for iCond = 1:nCond
     for iTrials=1:nTrial
         h2 = h1 + rateSVariance*randn;
         
-        disp([target, ...
-            distractor, threshold, nonDecisionTime, interTrialSigma, h2, stepsize, bias, reselect])
+        %disp([target, ...
+            %distractor, threshold, nonDecisionTime, interTrialSigma, h2, stepsize, bias, reselect])
        
         [rt_correct(iTrials),resp_correct(iTrials)] = res_ADDM(timesteps, target, ...
             distractor, threshold, nonDecisionTime, interTrialSigma, h2, stepsize, bias, reselect);

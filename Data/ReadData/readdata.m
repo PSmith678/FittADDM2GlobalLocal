@@ -10,7 +10,7 @@ function realDat = readdata(participantNumber)
 nCond = 8;
 realDat(nCond, 1) = struct('rt_res1',[],'rt_res0',[],'response',[]);
 
-participantFile = dir(sprintf('.%sData%sGL_Raw Data%s%sGlobalsaliency_occ.txt',filesep,filesep,filesep,participantNumber));
+participantFile = dir(sprintf('.%sData%sGL_Raw Data%s%sGlobalsaliency_occ.txt',filesep,filesep,filesep,participantNumber.label));
 data = readtable(sprintf('.%sData%sGL_Raw Data%s%s',filesep,filesep,filesep,participantFile.name)); 
 vars = [2, 4, 6, 9, 10];
 data = data(:,vars); % Level, saliency, congruency, RT, accuracy
@@ -32,7 +32,8 @@ end
 end 
 
 data = [dataLevelArray, table2array(data(:, 2:end))];
-        % Cond 1
+       
+       % Cond 1
        idxCorr = data(:,1) == 0 & data(:,2) == 1 & data(:,3) == 0 ...
           & data(:,5) == 1;
        idxIncorr = data(:,1) == 0 & data(:,2) == 1 & data(:,3) == 0 ...
