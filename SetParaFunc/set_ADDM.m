@@ -83,6 +83,8 @@ ret.post.comments = 'uniform-distributed priors';
 
 ret.post_from_best = 0;
 ret.post.bounds = ret.best.bounds;
+ret.post.bounds = ret.best.bounds;
+ret.post.demcmc_para.resampleProb = 0.3;
 % ret.best.generations = 1000;
 % 
 % % posterior sampling
