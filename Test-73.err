@@ -1,0 +1,17 @@
+Java/1.8.0_202
+alsa-lib/1.2.5.1
+MATLAB/2021b
+{Error using cd
+Unable to change current folder to
+'/rds/homes/p/pxs906/Repository/FittADDM2GlobalLocal/PilotData/sdaAll' (Name is
+nonexistent or not a folder).
+} 
+Java/1.8.0_281
+alsa-lib/1.2.5.1
+MATLAB/2021b
+{Error using cd
+Unable to change current folder to
+'/rds/homes/p/pxs906/Repository/FittADDM2GlobalLocal/PilotData/sdaAll' (Name is
+nonexistent or not a folder).
+} 
+slurmstepd: error: *** JOB 50259884 ON bear-pg0211u14b CANCELLED AT 2022-06-26T11:08:21 ***

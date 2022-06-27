@@ -1,0 +1,1291 @@
+Opening log file:  /rds/homes/p/pxs906/java.log.43408
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2021 The MathWorks, Inc.
+                  R2021b (9.11.0.1769968) 64-bit (glnxa64)
+                             September 17, 2021
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+>> >> 
+docuFold =
+
+    'PilotData/sdaAll'
+
+>> >> >> 
+ans = 
+
+  SettingsGroup with properties:
+
+    matlab: [1x1 SettingsGroup]
+
+>> >> >> >> >> >> >> >> >> >> [Warning: Name is nonexistent or not a directory:
+/rds/homes/p/pxs906/Repository/FittADDM2GlobalLocal/LocalUtil] 
+[> In path (line 109)
+In addpath (line 86)
+In initDocuTool (line 16)
+In initFitting (line 10)] 
+[Warning: Name is nonexistent or not a directory:
+/rds/homes/p/pxs906/Repository/FittADDM2GlobalLocal/GraphicsFunc] 
+[> In path (line 109)
+In addpath (line 86)
+In initDocuTool (line 17)
+In initFitting (line 10)] 
+>> Starting parallel pool (parpool) using the 'local' profile ...
+Connected to the parallel pool (number of workers: 12).
+[Warning: Saving results in this folder may override results produced in
+previous session!] 
+[> In greedy (line 131)
+In de_mcmc (line 213)
+In runFitting>run_BestParameterSearch (line 173)
+In runFitting>runBestPosterior (line 115)
+In runFitting (line 53)] 
+
+2.00% completed. 
+Predicted completion of parameter search in 2.24 hours.
+
+4.00% completed. 
+Predicted completion of parameter search in 1.46 hours.
+
+6.00% completed. 
+Predicted completion of parameter search in 1.86 hours.
+
+8.00% completed. 
+Predicted completion of parameter search in 1.82 hours.
+
+10.00% completed. 
+Predicted completion of parameter search in 1.65 hours.
+
+12.00% completed. 
+Predicted completion of parameter search in 2.09 hours.
+
+14.00% completed. 
+Predicted completion of parameter search in 1.68 hours.
+
+16.00% completed. 
+Predicted completion of parameter search in 1.85 hours.
+
+18.00% completed. 
+Predicted completion of parameter search in 1.53 hours.
+
+20.00% completed. 
+Predicted completion of parameter search in 1.74 hours.
+
+22.00% completed. 
+Predicted completion of parameter search in 1.62 hours.
+
+24.00% completed. 
+Predicted completion of parameter search in 1.75 hours.
+
+26.00% completed. 
+Predicted completion of parameter search in 1.41 hours.
+
+28.00% completed. 
+Predicted completion of parameter search in 1.54 hours.
+
+30.00% completed. 
+Predicted completion of parameter search in 1.49 hours.
+
+32.00% completed. 
+Predicted completion of parameter search in 1.48 hours.
+
+34.00% completed. 
+Predicted completion of parameter search in 1.35 hours.
+
+36.00% completed. 
+Predicted completion of parameter search in 1.35 hours.
+
+38.00% completed. 
+Predicted completion of parameter search in 1.21 hours.
+
+40.00% completed. 
+Predicted completion of parameter search in 1.02 hours.
+
+42.00% completed. 
+Predicted completion of parameter search in 58.85 minutes.
+
+44.00% completed. 
+Predicted completion of parameter search in 1.02 hours.
+
+46.00% completed. 
+Predicted completion of parameter search in 55.31 minutes.
+
+48.00% completed. 
+Predicted completion of parameter search in 52.21 minutes.
+
+50.00% completed. 
+Predicted completion of parameter search in 54.99 minutes.
+
+52.00% completed. 
+Predicted completion of parameter search in 58.58 minutes.
+
+54.00% completed. 
+Predicted completion of parameter search in 49.43 minutes.
+
+56.00% completed. 
+Predicted completion of parameter search in 44.89 minutes.
+
+58.00% completed. 
+Predicted completion of parameter search in 44.97 minutes.
+
+60.00% completed. 
+Predicted completion of parameter search in 33.65 minutes.
+
+62.00% completed. 
+Predicted completion of parameter search in 45.52 minutes.
+
+64.00% completed. 
+Predicted completion of parameter search in 36.88 minutes.
+
+66.00% completed. 
+Predicted completion of parameter search in 39.39 minutes.
+
+68.00% completed. 
+Predicted completion of parameter search in 29.26 minutes.
+
+70.00% completed. 
+Predicted completion of parameter search in 34.45 minutes.
+
+72.00% completed. 
+Predicted completion of parameter search in 24.01 minutes.
+
+74.00% completed. 
+Predicted completion of parameter search in 27.73 minutes.
+
+76.00% completed. 
+Predicted completion of parameter search in 23.89 minutes.
+
+78.00% completed. 
+Predicted completion of parameter search in 26.68 minutes.
+
+80.00% completed. 
+Predicted completion of parameter search in 17.73 minutes.
+
+82.00% completed. 
+Predicted completion of parameter search in 18.82 minutes.
+
+84.00% completed. 
+Predicted completion of parameter search in 16.22 minutes.
+
+86.00% completed. 
+Predicted completion of parameter search in 12.92 minutes.
+
+88.00% completed. 
+Predicted completion of parameter search in 13.17 minutes.
+
+90.00% completed. 
+Predicted completion of parameter search in 11.38 minutes.
+
+92.00% completed. 
+Predicted completion of parameter search in 9.24 minutes.
+
+94.00% completed. 
+Predicted completion of parameter search in 7.05 minutes.
+
+96.00% completed. 
+Predicted completion of parameter search in 4.30 minutes.
+
+98.00% completed. 
+Predicted completion of parameter search in 2.40 minutes.
+
+100.00% completed. 
+Predicted completion of parameter search in 0.00 seconds.
+
+0.67% completed. 
+Predicted completion of posterior sampling in 4.95 hours.
+
+1.33% completed. 
+Predicted completion of posterior sampling in 2.32 hours.
+
+2.00% completed. 
+Predicted completion of posterior sampling in 3.14 hours.
+
+2.67% completed. 
+Predicted completion of posterior sampling in 2.70 hours.
+
+3.33% completed. 
+Predicted completion of posterior sampling in 2.19 hours.
+
+4.00% completed. 
+Predicted completion of posterior sampling in 2.29 hours.
+
+4.67% completed. 
+Predicted completion of posterior sampling in 2.75 hours.
+
+5.33% completed. 
+Predicted completion of posterior sampling in 2.05 hours.
+
+6.00% completed. 
+Predicted completion of posterior sampling in 2.97 hours.
+
+6.67% completed. 
+Predicted completion of posterior sampling in 3.15 hours.
+
+7.33% completed. 
+Predicted completion of posterior sampling in 2.61 hours.
+
+8.00% completed. 
+Predicted completion of posterior sampling in 1.96 hours.
+
+8.67% completed. 
+Predicted completion of posterior sampling in 2.60 hours.
+
+9.33% completed. 
+Predicted completion of posterior sampling in 2.31 hours.
+
+10.00% completed. 
+Predicted completion of posterior sampling in 2.29 hours.
+
+10.67% completed. 
+Predicted completion of posterior sampling in 2.11 hours.
+
+11.33% completed. 
+Predicted completion of posterior sampling in 2.54 hours.
+
+12.00% completed. 
+Predicted completion of posterior sampling in 2.40 hours.
+
+12.67% completed. 
+Predicted completion of posterior sampling in 2.67 hours.
+
+13.33% completed. 
+Predicted completion of posterior sampling in 2.04 hours.
+
+14.00% completed. 
+Predicted completion of posterior sampling in 2.92 hours.
+
+14.67% completed. 
+Predicted completion of posterior sampling in 2.30 hours.
+
+15.33% completed. 
+Predicted completion of posterior sampling in 2.09 hours.
+
+16.00% completed. 
+Predicted completion of posterior sampling in 1.66 hours.
+
+16.67% completed. 
+Predicted completion of posterior sampling in 1.93 hours.
+
+17.33% completed. 
+Predicted completion of posterior sampling in 2.94 hours.
+
+18.00% completed. 
+Predicted completion of posterior sampling in 1.80 hours.
+
+18.67% completed. 
+Predicted completion of posterior sampling in 1.94 hours.
+
+19.33% completed. 
+Predicted completion of posterior sampling in 2.04 hours.
+
+20.00% completed. 
+Predicted completion of posterior sampling in 2.09 hours.
+
+20.67% completed. 
+Predicted completion of posterior sampling in 2.63 hours.
+
+21.33% completed. 
+Predicted completion of posterior sampling in 1.55 hours.
+
+22.00% completed. 
+Predicted completion of posterior sampling in 2.45 hours.
+
+22.67% completed. 
+Predicted completion of posterior sampling in 2.05 hours.
+
+23.33% completed. 
+Predicted completion of posterior sampling in 1.71 hours.
+
+24.00% completed. 
+Predicted completion of posterior sampling in 2.10 hours.
+
+24.67% completed. 
+Predicted completion of posterior sampling in 1.56 hours.
+
+25.33% completed. 
+Predicted completion of posterior sampling in 2.08 hours.
+
+26.00% completed. 
+Predicted completion of posterior sampling in 2.07 hours.
+
+26.67% completed. 
+Predicted completion of posterior sampling in 1.87 hours.
+
+27.33% completed. 
+Predicted completion of posterior sampling in 2.28 hours.
+
+28.00% completed. 
+Predicted completion of posterior sampling in 1.81 hours.
+
+28.67% completed. 
+Predicted completion of posterior sampling in 1.83 hours.
+
+29.33% completed. 
+Predicted completion of posterior sampling in 1.83 hours.
+
+30.00% completed. 
+Predicted completion of posterior sampling in 1.64 hours.
+
+30.67% completed. 
+Predicted completion of posterior sampling in 1.85 hours.
+
+31.33% completed. 
+Predicted completion of posterior sampling in 2.06 hours.
+
+32.00% completed. 
+Predicted completion of posterior sampling in 1.78 hours.
+
+32.67% completed. 
+Predicted completion of posterior sampling in 1.58 hours.
+
+33.33% completed. 
+Predicted completion of posterior sampling in 1.76 hours.
+
+34.00% completed. 
+Predicted completion of posterior sampling in 1.61 hours.
+
+34.67% completed. 
+Predicted completion of posterior sampling in 1.56 hours.
+
+35.33% completed. 
+Predicted completion of posterior sampling in 1.90 hours.
+
+36.00% completed. 
+Predicted completion of posterior sampling in 2.02 hours.
+
+36.67% completed. 
+Predicted completion of posterior sampling in 1.62 hours.
+
+37.33% completed. 
+Predicted completion of posterior sampling in 1.36 hours.
+
+38.00% completed. 
+Predicted completion of posterior sampling in 1.41 hours.
+
+38.67% completed. 
+Predicted completion of posterior sampling in 1.31 hours.
+
+39.33% completed. 
+Predicted completion of posterior sampling in 1.56 hours.
+
+40.00% completed. 
+Predicted completion of posterior sampling in 1.94 hours.
+
+40.67% completed. 
+Predicted completion of posterior sampling in 1.48 hours.
+
+41.33% completed. 
+Predicted completion of posterior sampling in 1.55 hours.
+
+42.00% completed. 
+Predicted completion of posterior sampling in 1.27 hours.
+
+42.67% completed. 
+Predicted completion of posterior sampling in 1.58 hours.
+
+43.33% completed. 
+Predicted completion of posterior sampling in 58.04 minutes.
+
+44.00% completed. 
+Predicted completion of posterior sampling in 1.32 hours.
+
+44.67% completed. 
+Predicted completion of posterior sampling in 1.58 hours.
+
+45.33% completed. 
+Predicted completion of posterior sampling in 1.29 hours.
+
+46.00% completed. 
+Predicted completion of posterior sampling in 1.47 hours.
+
+46.67% completed. 
+Predicted completion of posterior sampling in 1.57 hours.
+
+47.33% completed. 
+Predicted completion of posterior sampling in 1.68 hours.
+
+48.00% completed. 
+Predicted completion of posterior sampling in 1.60 hours.
+
+48.67% completed. 
+Predicted completion of posterior sampling in 1.28 hours.
+
+49.33% completed. 
+Predicted completion of posterior sampling in 1.29 hours.
+
+50.00% completed. 
+Predicted completion of posterior sampling in 1.42 hours.
+
+50.67% completed. 
+Predicted completion of posterior sampling in 1.17 hours.
+
+51.33% completed. 
+Predicted completion of posterior sampling in 1.55 hours.
+
+52.00% completed. 
+Predicted completion of posterior sampling in 1.09 hours.
+
+52.67% completed. 
+Predicted completion of posterior sampling in 1.33 hours.
+
+53.33% completed. 
+Predicted completion of posterior sampling in 1.18 hours.
+
+54.00% completed. 
+Predicted completion of posterior sampling in 1.11 hours.
+
+54.67% completed. 
+Predicted completion of posterior sampling in 1.23 hours.
+
+55.33% completed. 
+Predicted completion of posterior sampling in 1.31 hours.
+
+56.00% completed. 
+Predicted completion of posterior sampling in 1.27 hours.
+
+56.67% completed. 
+Predicted completion of posterior sampling in 49.76 minutes.
+
+57.33% completed. 
+Predicted completion of posterior sampling in 59.88 minutes.
+
+58.00% completed. 
+Predicted completion of posterior sampling in 55.81 minutes.
+
+58.67% completed. 
+Predicted completion of posterior sampling in 46.85 minutes.
+
+59.33% completed. 
+Predicted completion of posterior sampling in 1.22 hours.
+
+60.00% completed. 
+Predicted completion of posterior sampling in 1.17 hours.
+
+60.67% completed. 
+Predicted completion of posterior sampling in 1.39 hours.
+
+61.33% completed. 
+Predicted completion of posterior sampling in 1.01 hours.
+
+62.00% completed. 
+Predicted completion of posterior sampling in 1.40 hours.
+
+62.67% completed. 
+Predicted completion of posterior sampling in 1.22 hours.
+
+63.33% completed. 
+Predicted completion of posterior sampling in 1.07 hours.
+
+64.00% completed. 
+Predicted completion of posterior sampling in 1.12 hours.
+
+64.67% completed. 
+Predicted completion of posterior sampling in 50.90 minutes.
+
+65.33% completed. 
+Predicted completion of posterior sampling in 52.23 minutes.
+
+66.00% completed. 
+Predicted completion of posterior sampling in 45.84 minutes.
+
+66.67% completed. 
+Predicted completion of posterior sampling in 34.73 minutes.
+
+67.33% completed. 
+Predicted completion of posterior sampling in 45.89 minutes.
+
+68.00% completed. 
+Predicted completion of posterior sampling in 43.76 minutes.
+
+68.67% completed. 
+Predicted completion of posterior sampling in 48.78 minutes.
+
+69.33% completed. 
+Predicted completion of posterior sampling in 47.22 minutes.
+
+70.00% completed. 
+Predicted completion of posterior sampling in 59.17 minutes.
+
+70.67% completed. 
+Predicted completion of posterior sampling in 44.32 minutes.
+
+71.33% completed. 
+Predicted completion of posterior sampling in 46.12 minutes.
+
+72.00% completed. 
+Predicted completion of posterior sampling in 45.15 minutes.
+
+72.67% completed. 
+Predicted completion of posterior sampling in 43.27 minutes.
+
+73.33% completed. 
+Predicted completion of posterior sampling in 47.25 minutes.
+
+74.00% completed. 
+Predicted completion of posterior sampling in 46.32 minutes.
+
+74.67% completed. 
+Predicted completion of posterior sampling in 43.11 minutes.
+
+75.33% completed. 
+Predicted completion of posterior sampling in 35.08 minutes.
+
+76.00% completed. 
+Predicted completion of posterior sampling in 31.70 minutes.
+
+76.67% completed. 
+Predicted completion of posterior sampling in 33.69 minutes.
+
+77.33% completed. 
+Predicted completion of posterior sampling in 31.50 minutes.
+
+78.00% completed. 
+Predicted completion of posterior sampling in 31.64 minutes.
+
+78.67% completed. 
+Predicted completion of posterior sampling in 33.72 minutes.
+
+79.33% completed. 
+Predicted completion of posterior sampling in 34.83 minutes.
+
+80.00% completed. 
+Predicted completion of posterior sampling in 36.62 minutes.
+
+80.67% completed. 
+Predicted completion of posterior sampling in 36.79 minutes.
+
+81.33% completed. 
+Predicted completion of posterior sampling in 29.05 minutes.
+
+82.00% completed. 
+Predicted completion of posterior sampling in 28.86 minutes.
+
+82.67% completed. 
+Predicted completion of posterior sampling in 25.01 minutes.
+
+83.33% completed. 
+Predicted completion of posterior sampling in 24.40 minutes.
+
+84.00% completed. 
+Predicted completion of posterior sampling in 22.07 minutes.
+
+84.67% completed. 
+Predicted completion of posterior sampling in 29.25 minutes.
+
+85.33% completed. 
+Predicted completion of posterior sampling in 18.39 minutes.
+
+86.00% completed. 
+Predicted completion of posterior sampling in 22.54 minutes.
+
+86.67% completed. 
+Predicted completion of posterior sampling in 17.54 minutes.
+
+87.33% completed. 
+Predicted completion of posterior sampling in 23.79 minutes.
+
+88.00% completed. 
+Predicted completion of posterior sampling in 18.35 minutes.
+
+88.67% completed. 
+Predicted completion of posterior sampling in 23.17 minutes.
+
+89.33% completed. 
+Predicted completion of posterior sampling in 15.58 minutes.
+
+90.00% completed. 
+Predicted completion of posterior sampling in 16.55 minutes.
+
+90.67% completed. 
+Predicted completion of posterior sampling in 14.37 minutes.
+
+91.33% completed. 
+Predicted completion of posterior sampling in 11.79 minutes.
+
+92.00% completed. 
+Predicted completion of posterior sampling in 13.00 minutes.
+
+92.67% completed. 
+Predicted completion of posterior sampling in 11.07 minutes.
+
+93.33% completed. 
+Predicted completion of posterior sampling in 12.11 minutes.
+
+94.00% completed. 
+Predicted completion of posterior sampling in 8.59 minutes.
+
+94.67% completed. 
+Predicted completion of posterior sampling in 8.21 minutes.
+
+95.33% completed. 
+Predicted completion of posterior sampling in 6.90 minutes.
+
+96.00% completed. 
+Predicted completion of posterior sampling in 4.62 minutes.
+
+96.67% completed. 
+Predicted completion of posterior sampling in 4.96 minutes.
+
+97.33% completed. 
+Predicted completion of posterior sampling in 4.08 minutes.
+
+98.00% completed. 
+Predicted completion of posterior sampling in 2.45 minutes.
+
+98.67% completed. 
+Predicted completion of posterior sampling in 2.01 minutes.
+
+99.33% completed. 
+Predicted completion of posterior sampling in 1.13 minutes.
+
+100.00% completed. 
+Predicted completion of posterior sampling in 0.00 seconds.
+>> Opening log file:  /rds/homes/p/pxs906/java.log.26212
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2021 The MathWorks, Inc.
+                  R2021b (9.11.0.1769968) 64-bit (glnxa64)
+                             September 17, 2021
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+>> >> 
+docuFold =
+
+    'PilotData/sdaAll'
+
+>> >> >> 
+ans = 
+
+  SettingsGroup with properties:
+
+    matlab: [1x1 SettingsGroup]
+
+>> >> >> >> >> >> >> >> >> >> [Warning: Name is nonexistent or not a directory:
+/rds/homes/p/pxs906/Repository/FittADDM2GlobalLocal/LocalUtil] 
+[> In path (line 109)
+In addpath (line 86)
+In initDocuTool (line 16)
+In initFitting (line 10)] 
+[Warning: Name is nonexistent or not a directory:
+/rds/homes/p/pxs906/Repository/FittADDM2GlobalLocal/GraphicsFunc] 
+[> In path (line 109)
+In addpath (line 86)
+In initDocuTool (line 17)
+In initFitting (line 10)] 
+>> Starting parallel pool (parpool) using the 'local' profile ...
+Connected to the parallel pool (number of workers: 12).
+[Warning: Saving results in this folder may override results produced in
+previous session!] 
+[> In greedy (line 131)
+In de_mcmc (line 213)
+In runFitting>run_BestParameterSearch (line 173)
+In runFitting>runBestPosterior (line 115)
+In runFitting (line 53)] 
+
+2.00% completed. 
+Predicted completion of parameter search in 2.60 hours.
+
+4.00% completed. 
+Predicted completion of parameter search in 1.76 hours.
+
+6.00% completed. 
+Predicted completion of parameter search in 1.79 hours.
+
+8.00% completed. 
+Predicted completion of parameter search in 1.73 hours.
+
+10.00% completed. 
+Predicted completion of parameter search in 1.70 hours.
+
+12.00% completed. 
+Predicted completion of parameter search in 1.74 hours.
+
+14.00% completed. 
+Predicted completion of parameter search in 1.54 hours.
+
+16.00% completed. 
+Predicted completion of parameter search in 1.45 hours.
+
+18.00% completed. 
+Predicted completion of parameter search in 1.61 hours.
+
+20.00% completed. 
+Predicted completion of parameter search in 1.29 hours.
+
+22.00% completed. 
+Predicted completion of parameter search in 1.37 hours.
+
+24.00% completed. 
+Predicted completion of parameter search in 1.43 hours.
+
+26.00% completed. 
+Predicted completion of parameter search in 1.21 hours.
+
+28.00% completed. 
+Predicted completion of parameter search in 1.29 hours.
+
+30.00% completed. 
+Predicted completion of parameter search in 1.37 hours.
+
+32.00% completed. 
+Predicted completion of parameter search in 1.29 hours.
+
+34.00% completed. 
+Predicted completion of parameter search in 1.24 hours.
+
+36.00% completed. 
+Predicted completion of parameter search in 1.28 hours.
+
+38.00% completed. 
+Predicted completion of parameter search in 1.19 hours.
+
+40.00% completed. 
+Predicted completion of parameter search in 1.04 hours.
+
+42.00% completed. 
+Predicted completion of parameter search in 1.11 hours.
+
+44.00% completed. 
+Predicted completion of parameter search in 1.09 hours.
+
+46.00% completed. 
+Predicted completion of parameter search in 1.02 hours.
+
+48.00% completed. 
+Predicted completion of parameter search in 56.47 minutes.
+
+50.00% completed. 
+Predicted completion of parameter search in 55.37 minutes.
+
+52.00% completed. 
+Predicted completion of parameter search in 50.27 minutes.
+
+54.00% completed. 
+Predicted completion of parameter search in 56.96 minutes.
+
+56.00% completed. 
+Predicted completion of parameter search in 46.50 minutes.
+
+58.00% completed. 
+Predicted completion of parameter search in 42.30 minutes.
+
+60.00% completed. 
+Predicted completion of parameter search in 39.32 minutes.
+
+62.00% completed. 
+Predicted completion of parameter search in 42.43 minutes.
+
+64.00% completed. 
+Predicted completion of parameter search in 41.58 minutes.
+
+66.00% completed. 
+Predicted completion of parameter search in 40.32 minutes.
+
+68.00% completed. 
+Predicted completion of parameter search in 35.66 minutes.
+
+70.00% completed. 
+Predicted completion of parameter search in 31.38 minutes.
+
+72.00% completed. 
+Predicted completion of parameter search in 30.09 minutes.
+
+74.00% completed. 
+Predicted completion of parameter search in 24.87 minutes.
+
+76.00% completed. 
+Predicted completion of parameter search in 23.28 minutes.
+
+78.00% completed. 
+Predicted completion of parameter search in 21.59 minutes.
+
+80.00% completed. 
+Predicted completion of parameter search in 21.93 minutes.
+
+82.00% completed. 
+Predicted completion of parameter search in 15.02 minutes.
+
+84.00% completed. 
+Predicted completion of parameter search in 14.86 minutes.
+
+86.00% completed. 
+Predicted completion of parameter search in 13.72 minutes.
+
+88.00% completed. 
+Predicted completion of parameter search in 12.86 minutes.
+
+90.00% completed. 
+Predicted completion of parameter search in 9.37 minutes.
+
+92.00% completed. 
+Predicted completion of parameter search in 10.14 minutes.
+
+94.00% completed. 
+Predicted completion of parameter search in 6.43 minutes.
+
+96.00% completed. 
+Predicted completion of parameter search in 4.43 minutes.
+
+98.00% completed. 
+Predicted completion of parameter search in 2.11 minutes.
+
+100.00% completed. 
+Predicted completion of parameter search in 0.00 seconds.
+
+0.67% completed. 
+Predicted completion of posterior sampling in 4.17 hours.
+
+1.33% completed. 
+Predicted completion of posterior sampling in 2.22 hours.
+
+2.00% completed. 
+Predicted completion of posterior sampling in 3.67 hours.
+
+2.67% completed. 
+Predicted completion of posterior sampling in 2.14 hours.
+
+3.33% completed. 
+Predicted completion of posterior sampling in 2.09 hours.
+
+4.00% completed. 
+Predicted completion of posterior sampling in 2.45 hours.
+
+4.67% completed. 
+Predicted completion of posterior sampling in 2.48 hours.
+
+5.33% completed. 
+Predicted completion of posterior sampling in 3.42 hours.
+
+6.00% completed. 
+Predicted completion of posterior sampling in 2.21 hours.
+
+6.67% completed. 
+Predicted completion of posterior sampling in 2.40 hours.
+
+7.33% completed. 
+Predicted completion of posterior sampling in 2.43 hours.
+
+8.00% completed. 
+Predicted completion of posterior sampling in 2.57 hours.
+
+8.67% completed. 
+Predicted completion of posterior sampling in 2.73 hours.
+
+9.33% completed. 
+Predicted completion of posterior sampling in 2.63 hours.
+
+10.00% completed. 
+Predicted completion of posterior sampling in 2.73 hours.
+
+10.67% completed. 
+Predicted completion of posterior sampling in 3.01 hours.
+
+11.33% completed. 
+Predicted completion of posterior sampling in 2.61 hours.
+
+12.00% completed. 
+Predicted completion of posterior sampling in 2.03 hours.
+
+12.67% completed. 
+Predicted completion of posterior sampling in 2.82 hours.
+
+13.33% completed. 
+Predicted completion of posterior sampling in 2.56 hours.
+
+14.00% completed. 
+Predicted completion of posterior sampling in 3.11 hours.
+
+14.67% completed. 
+Predicted completion of posterior sampling in 2.13 hours.
+
+15.33% completed. 
+Predicted completion of posterior sampling in 2.73 hours.
+
+16.00% completed. 
+Predicted completion of posterior sampling in 2.32 hours.
+
+16.67% completed. 
+Predicted completion of posterior sampling in 2.11 hours.
+
+17.33% completed. 
+Predicted completion of posterior sampling in 2.81 hours.
+
+18.00% completed. 
+Predicted completion of posterior sampling in 2.95 hours.
+
+18.67% completed. 
+Predicted completion of posterior sampling in 2.29 hours.
+
+19.33% completed. 
+Predicted completion of posterior sampling in 1.99 hours.
+
+20.00% completed. 
+Predicted completion of posterior sampling in 1.72 hours.
+
+20.67% completed. 
+Predicted completion of posterior sampling in 2.21 hours.
+
+21.33% completed. 
+Predicted completion of posterior sampling in 2.20 hours.
+
+22.00% completed. 
+Predicted completion of posterior sampling in 2.78 hours.
+
+22.67% completed. 
+Predicted completion of posterior sampling in 1.96 hours.
+
+23.33% completed. 
+Predicted completion of posterior sampling in 2.09 hours.
+
+24.00% completed. 
+Predicted completion of posterior sampling in 2.69 hours.
+
+24.67% completed. 
+Predicted completion of posterior sampling in 2.05 hours.
+
+25.33% completed. 
+Predicted completion of posterior sampling in 2.06 hours.
+
+26.00% completed. 
+Predicted completion of posterior sampling in 1.60 hours.
+
+26.67% completed. 
+Predicted completion of posterior sampling in 1.71 hours.
+
+27.33% completed. 
+Predicted completion of posterior sampling in 1.74 hours.
+
+28.00% completed. 
+Predicted completion of posterior sampling in 1.84 hours.
+
+28.67% completed. 
+Predicted completion of posterior sampling in 2.31 hours.
+
+29.33% completed. 
+Predicted completion of posterior sampling in 2.13 hours.
+
+30.00% completed. 
+Predicted completion of posterior sampling in 2.07 hours.
+
+30.67% completed. 
+Predicted completion of posterior sampling in 1.92 hours.
+
+31.33% completed. 
+Predicted completion of posterior sampling in 1.78 hours.
+
+32.00% completed. 
+Predicted completion of posterior sampling in 1.76 hours.
+
+32.67% completed. 
+Predicted completion of posterior sampling in 2.00 hours.
+
+33.33% completed. 
+Predicted completion of posterior sampling in 1.82 hours.
+
+34.00% completed. 
+Predicted completion of posterior sampling in 1.95 hours.
+
+34.67% completed. 
+Predicted completion of posterior sampling in 1.40 hours.
+
+35.33% completed. 
+Predicted completion of posterior sampling in 1.94 hours.
+
+36.00% completed. 
+Predicted completion of posterior sampling in 1.39 hours.
+
+36.67% completed. 
+Predicted completion of posterior sampling in 1.52 hours.
+
+37.33% completed. 
+Predicted completion of posterior sampling in 2.15 hours.
+
+38.00% completed. 
+Predicted completion of posterior sampling in 1.73 hours.
+
+38.67% completed. 
+Predicted completion of posterior sampling in 1.86 hours.
+
+39.33% completed. 
+Predicted completion of posterior sampling in 2.29 hours.
+
+40.00% completed. 
+Predicted completion of posterior sampling in 1.81 hours.
+
+40.67% completed. 
+Predicted completion of posterior sampling in 2.29 hours.
+
+41.33% completed. 
+Predicted completion of posterior sampling in 1.71 hours.
+
+42.00% completed. 
+Predicted completion of posterior sampling in 1.66 hours.
+
+42.67% completed. 
+Predicted completion of posterior sampling in 1.57 hours.
+
+43.33% completed. 
+Predicted completion of posterior sampling in 1.35 hours.
+
+44.00% completed. 
+Predicted completion of posterior sampling in 2.01 hours.
+
+44.67% completed. 
+Predicted completion of posterior sampling in 1.70 hours.
+
+45.33% completed. 
+Predicted completion of posterior sampling in 1.51 hours.
+
+46.00% completed. 
+Predicted completion of posterior sampling in 1.87 hours.
+
+46.67% completed. 
+Predicted completion of posterior sampling in 1.51 hours.
+
+47.33% completed. 
+Predicted completion of posterior sampling in 1.73 hours.
+
+48.00% completed. 
+Predicted completion of posterior sampling in 1.33 hours.
+
+48.67% completed. 
+Predicted completion of posterior sampling in 1.84 hours.
+
+49.33% completed. 
+Predicted completion of posterior sampling in 1.50 hours.
+
+50.00% completed. 
+Predicted completion of posterior sampling in 1.38 hours.
+
+50.67% completed. 
+Predicted completion of posterior sampling in 1.45 hours.
+
+51.33% completed. 
+Predicted completion of posterior sampling in 1.27 hours.
+
+52.00% completed. 
+Predicted completion of posterior sampling in 1.14 hours.
+
+52.67% completed. 
+Predicted completion of posterior sampling in 1.58 hours.
+
+53.33% completed. 
+Predicted completion of posterior sampling in 1.13 hours.
+
+54.00% completed. 
+Predicted completion of posterior sampling in 1.28 hours.
+
+54.67% completed. 
+Predicted completion of posterior sampling in 1.45 hours.
+
+55.33% completed. 
+Predicted completion of posterior sampling in 57.02 minutes.
+
+56.00% completed. 
+Predicted completion of posterior sampling in 1.34 hours.
+
+56.67% completed. 
+Predicted completion of posterior sampling in 1.15 hours.
+
+57.33% completed. 
+Predicted completion of posterior sampling in 1.19 hours.
+
+58.00% completed. 
+Predicted completion of posterior sampling in 1.01 hours.
+
+58.67% completed. 
+Predicted completion of posterior sampling in 1.14 hours.
+
+59.33% completed. 
+Predicted completion of posterior sampling in 1.23 hours.
+
+60.00% completed. 
+Predicted completion of posterior sampling in 1.24 hours.
+
+60.67% completed. 
+Predicted completion of posterior sampling in 1.19 hours.
+
+61.33% completed. 
+Predicted completion of posterior sampling in 58.68 minutes.
+
+62.00% completed. 
+Predicted completion of posterior sampling in 1.12 hours.
+
+62.67% completed. 
+Predicted completion of posterior sampling in 57.10 minutes.
+
+63.33% completed. 
+Predicted completion of posterior sampling in 1.09 hours.
+
+64.00% completed. 
+Predicted completion of posterior sampling in 1.01 hours.
+
+64.67% completed. 
+Predicted completion of posterior sampling in 1.13 hours.
+
+65.33% completed. 
+Predicted completion of posterior sampling in 52.42 minutes.
+
+66.00% completed. 
+Predicted completion of posterior sampling in 51.33 minutes.
+
+66.67% completed. 
+Predicted completion of posterior sampling in 1.12 hours.
+
+67.33% completed. 
+Predicted completion of posterior sampling in 1.10 hours.
+
+68.00% completed. 
+Predicted completion of posterior sampling in 1.00 hours.
+
+68.67% completed. 
+Predicted completion of posterior sampling in 44.70 minutes.
+
+69.33% completed. 
+Predicted completion of posterior sampling in 38.69 minutes.
+
+70.00% completed. 
+Predicted completion of posterior sampling in 56.48 minutes.
+
+70.67% completed. 
+Predicted completion of posterior sampling in 57.94 minutes.
+
+71.33% completed. 
+Predicted completion of posterior sampling in 47.67 minutes.
+
+72.00% completed. 
+Predicted completion of posterior sampling in 41.96 minutes.
+
+72.67% completed. 
+Predicted completion of posterior sampling in 44.68 minutes.
+
+73.33% completed. 
+Predicted completion of posterior sampling in 31.79 minutes.
+
+74.00% completed. 
+Predicted completion of posterior sampling in 33.87 minutes.
+
+74.67% completed. 
+Predicted completion of posterior sampling in 55.08 minutes.
+
+75.33% completed. 
+Predicted completion of posterior sampling in 35.03 minutes.
+
+76.00% completed. 
+Predicted completion of posterior sampling in 39.37 minutes.
+
+76.67% completed. 
+Predicted completion of posterior sampling in 38.43 minutes.
+
+77.33% completed. 
+Predicted completion of posterior sampling in 34.45 minutes.
+
+78.00% completed. 
+Predicted completion of posterior sampling in 44.93 minutes.
+
+78.67% completed. 
+Predicted completion of posterior sampling in 33.34 minutes.
+
+79.33% completed. 
+Predicted completion of posterior sampling in 35.23 minutes.
+
+80.00% completed. 
+Predicted completion of posterior sampling in 35.84 minutes.
+
+80.67% completed. 
+Predicted completion of posterior sampling in 34.71 minutes.
+
+81.33% completed. 
+Predicted completion of posterior sampling in 35.42 minutes.
+
+82.00% completed. 
+Predicted completion of posterior sampling in 27.45 minutes.
+
+82.67% completed. 
+Predicted completion of posterior sampling in 29.24 minutes.
+
+83.33% completed. 
+Predicted completion of posterior sampling in 28.00 minutes.
+
+84.00% completed. 
+Predicted completion of posterior sampling in 26.47 minutes.
+
+84.67% completed. 
+Predicted completion of posterior sampling in 30.68 minutes.
+
+85.33% completed. 
+Predicted completion of posterior sampling in 26.05 minutes.
+
+86.00% completed. 
+Predicted completion of posterior sampling in 25.09 minutes.
+
+86.67% completed. 
+Predicted completion of posterior sampling in 25.19 minutes.
+
+87.33% completed. 
+Predicted completion of posterior sampling in 21.07 minutes.
+
+88.00% completed. 
+Predicted completion of posterior sampling in 23.90 minutes.
+
+88.67% completed. 
+Predicted completion of posterior sampling in 17.17 minutes.
+
+89.33% completed. 
+Predicted completion of posterior sampling in 19.35 minutes.
+
+90.00% completed. 
+Predicted completion of posterior sampling in 17.03 minutes.
+
+90.67% completed. 
+Predicted completion of posterior sampling in 12.58 minutes.
+
+91.33% completed. 
+Predicted completion of posterior sampling in 16.02 minutes.
+
+92.00% completed. 
+Predicted completion of posterior sampling in 13.59 minutes.
+
+92.67% completed. 
+Predicted completion of posterior sampling in 12.56 minutes.
+
+93.33% completed. 
+Predicted completion of posterior sampling in 10.41 minutes.
+
+94.00% completed. 
+Predicted completion of posterior sampling in 9.22 minutes.
+
+94.67% completed. 
+Predicted completion of posterior sampling in 8.86 minutes.
+
+95.33% completed. 
+Predicted completion of posterior sampling in 6.53 minutes.
+
+96.00% completed. 
+Predicted completion of posterior sampling in 6.53 minutes.
+
+96.67% completed. 
+Predicted completion of posterior sampling in 6.29 minutes.
+
+97.33% completed. 
+Predicted completion of posterior sampling in 4.69 minutes.
+
+98.00% completed. 
+Predicted completion of posterior sampling in 3.30 minutes.
+
+98.67% completed. 
+Predicted completion of posterior sampling in 2.50 minutes.
+
+99.33% completed. 
+Predicted completion of posterior sampling in 1.11 minutes.
+
+100.00% completed. 
+Predicted completion of posterior sampling in 0.00 seconds.
+>> >> IdleTimeout has been reached.
+Parallel pool using the 'local' profile is shutting down.
+>> 

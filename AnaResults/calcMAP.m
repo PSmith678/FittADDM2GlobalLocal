@@ -4,8 +4,8 @@ function calcMAP(uid)
     out = calcMAPInd(uid,[],[2500 1]);
 docu1 = load_docufile(uid);
 
-for c = 1:length(docu1.post.res)
-    docu1.post.res(c).map = out(c,:);
+for c = 1:size(docu1.post.res.posterior, 3)
+    docu1.post.res.map(c) = out(c,:);
     save_docufile(docu1);
 end
 
@@ -97,7 +97,7 @@ if docu.data.selector.multiFits == 1
         [param(iMulti,:), max_val(iMulti)] = findGlobalMaximum( kdePdf.pdf );
     end
 else
-    [~,post] = subsamplePosterior(docu.res.posterior,post_sampling);
+    [~,post] = subsamplePosterior(docu.post.res.posterior,post_sampling);
     % taken from quickStart_oKDE
     if 2*nParam > 20
         initSampleSize = 2*nParam;
@@ -131,7 +131,7 @@ else
     end
     
     kdePdf = executeOperatorIKDE( kdePdf, 'compressionClusterThresh', 0.02 ) ;
-    [param, max_val] = findGlobalMaximum( kdePdf );
+    [param, max_val] = findGlobalMaximum( kdePdf.pdf );
 end
 
 

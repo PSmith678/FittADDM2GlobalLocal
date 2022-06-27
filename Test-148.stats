@@ -1,0 +1,17 @@
++--------------------------------------------------------------------------+
+| Job on the BlueBEAR cluster:
+| Starting at Fri Jun 24 23:12:56 2022 for pxs906(622350)
+| Identity jobid 50246783 jobname Test
+| Array Identity 50246745_148
+| Running against project heinkedg-esrc-nsf and in partition icelake-castles
+| Requested cpu=12,mem=48G,node=1,billing=12 - 4-04:00:00 walltime
+| Assigned to nodes bear-pg0104u07a
+| Command ./AnaModels/runPilot.sh
+| WorkDir /rds/homes/p/pxs906/Repository/FittADDM2GlobalLocal
++--------------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+| Finished at Sat Jun 25 04:13:37 2022 for pxs906(622350) on the BlueBEAR Cluster
+| Required (1-01:05:50 cputime, 12432580K memory used) - 05:00:47 walltime
+| JobState COMPLETING - Reason None
+| Exitcode 0:0
++--------------------------------------------------------------------------+

@@ -1,0 +1,35 @@
+Java/1.8.0_202
+alsa-lib/1.2.5.1
+MATLAB/2021b
+{Error using cd
+Unable to change current folder to
+'/rds/homes/p/pxs906/Repository/FittADDM2GlobalLocal/PilotData/sdaAll' (Name is
+nonexistent or not a folder).
+} 
+{Error using logLike_kde (line 156)
+complex likelihood
+
+Error in runFitting>@(x)feval(docu.model.loglikeFunc.name,call_name,x,docu.para_rules,docu.model.loglikeFunc.para,docu.data.data) (line 173)
+            [bp, bg, ar, finalPop, finalgof] = de_mcmc(@(x) feval(docu.model.loglikeFunc.name, call_name,x, docu.para_rules, docu.model.loglikeFunc.para, docu.data.data), ...
+
+Error in greedy (line 162)
+                gof(1,j+gr) = feval(fun, squeeze(pop(1,j+gr,:))');
+
+Error in de_mcmc (line 213)
+    [p,g,a,bp,bg]=greedy(fun, prior, args{:});
+
+Error in runFitting>run_BestParameterSearch (line 173)
+            [bp, bg, ar, finalPop, finalgof] = de_mcmc(@(x) feval(docu.model.loglikeFunc.name, call_name,x, docu.para_rules, docu.model.loglikeFunc.para, docu.data.data), ...
+
+Error in runFitting>runBestPosterior (line 115)
+        ret = run_BestParameterSearch(docu);
+
+Error in runFitting (line 53)
+    docu = runBestPosterior(docu);
+} 
+{Error using calcMAP/calcMAPInd (line 34)
+no posterior results in docu-file
+
+Error in calcMAP (line 4)
+    out = calcMAPInd(uid,[],[2500 1]);
+} 

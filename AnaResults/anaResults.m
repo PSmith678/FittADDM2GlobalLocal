@@ -8,7 +8,7 @@ nCond = 1;
 %nCond = length(docu.post.res);
 nParam = size(docu.post.res.posterior, 3);
 plotDim = [4, 6];
-plotGrid = reshape(1:nCond*(nParam+10),nParam+10,[])';
+plotGrid = reshape(1:nCond*(nParam+11),nParam+11,[])';
 
 % Open figure
 figure(uid)
@@ -17,14 +17,16 @@ figure(uid)
 for iCond = 1:nCond
     
     % Loop through and plot parameters.
+params = {'Rate1', 'Rate2', 'Rate3', 'Rate4', 'Bias1', 'Bias2', 'Bias3', 'Bias4', 'L1', 'L2', 'Threshold', 'Non-Decision Time', 'IOR'};
 for iParam = 1:nParam
 subplot(plotDim(1),plotDim(2),plotGrid(iCond,iParam))
 post = docu.post.res(iCond).posterior(501:end,:,iParam);
-histogram(post(:));hold on
+histogram(post(:)); title(sprintf('%s', params{iParam})); hold on;
 param(iParam) = docu.best.res(iCond).bp(iParam);
 
+
 % Uncomment this line if docufile has map estimates.
-%param(iParam) = docu.post.res(iCond).map(iParam);
+param(iParam) = docu.post.res(iCond).map(iParam);
 
 xline(param(iParam),'r','LineWidth',2);hold on
 end
@@ -50,7 +52,7 @@ plot(simCond,quantiles,'r-','LineWidth',2);hold on
 plot(datCon,quantiles,'o','MarkerFaceColor','b');
 
 ylabel('cdf');
-title(sprintf('Gof = %.3f for %s',like(iCond), docu.data.selector.nCondLabel{iCondition}));
+title(sprintf('For %s', docu.data.selector.nCondLabel{iCondition}));
 hold on
 
 
@@ -79,9 +81,12 @@ plot(1:500,docu.post.res(iCond).ar_post(1:500),'r-','LineWidth',2);
 hold on
 plot(501:3000-1,docu.post.res(iCond).ar_post(501:end),'k-','LineWidth',2);
 title('Acceptance Rate')
-end
-drawnow
 
+end
+subplot(plotDim(1), plotDim(2), plotGrid(iCond, nParam + 11))
+title(sprintf('Gof =  %f', like(iCond)));
+drawnow
+sgtitle(sprintf('Participant %d', uid))
 end
 
 %set(gcf,'WindowStyle','docked');drawnow
