@@ -1,0 +1,60 @@
+function testDeMcmc ()
+
+disp('Testing whether DE_MCMC with parallel implementation works.');
+pop = randn(1,3);
+dummyFunction = @(x)normpdf(x);
+popSize = 3;
+dis = ones(1,popSize);
+minBounds = -4;
+maxBounds = 4;
+try
+    parpool(2);
+catch
+    poolobj = gcp('nocreate');
+    if poolobj.NumWorkers ~= 2
+        delete(poolobj);
+        parpool(2);
+    end
+end
+try
+    fprintf('\nTrying the search without parallelisation\n');
+    [a,b,acc,lastGen,lastFits] = de_mcmc(@(evalPars) feval(dummyFunction,evalPars),[minBounds;maxBounds],'OnlyBestSearch','boundedUniform','groupSize',10,'showProgress',1,'nGenerations',4);
+    fprintf('Passed\n');
+catch e
+    disp('Failed');
+%     throw(e);
+end
+try
+    parallelOn = 1;
+    fprintf('\nTrying the search with parallelisation\n');
+    [a,b,acc,lastGen,lastFits] = de_mcmc(@(evalPars) feval(fName,evalPars),[minBounds;maxBounds],'OnlyBestSearch','boundedUniform','groupSize',10,'showProgress',1,'nGenerations',4,'parallelOn');
+    fprintf('Passed\n');
+catch e
+    disp('Failed');
+    %     throw(e);
+end
+try
+pop = randn(2,3);
+dummyFunction = @(x)mvnpdf(x);
+popSize = 3;
+dis = ones(1,popSize);
+minBounds = [-4,-4];
+maxBounds = [4,4];
+catch
+    
+
+try
+    fprintf('\nTesting correctness of the returned best solutions\n');
+    testOutput = dummyFunction(b);
+    if testOutput == a
+        fprintf('Passed\n');
+    else
+        e = MException('Fitness:PopulationEvaluation:valueMismatch','Something went wrong with evaluting the fitness');
+        throw(e);
+    end
+catch e
+    disp('Failed');
+%     throw(e);
+end
+
+end

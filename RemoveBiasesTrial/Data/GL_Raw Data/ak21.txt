@@ -1,0 +1,24 @@
+Average of SCor	Column Labels									
+	Global		Global Total	Local		Local Total	Grand Total			
+Row Labels	global salient	local salient		global salient	local salient					
+Congruent	0.94	1.00	0.97	1.00	1.00	1.00	0.98			
+Incongruent	0.94	0.88	0.91	0.88	0.94	0.91	0.91			
+Grand Total	0.94	0.94	0.94	0.94	0.97	0.95	0.95			
+										
+										
+										
+										
+			rt	SDev	CCor	UCor	level	saliency	congruency	
+			481.7	54.66	14	15	0	0	0	
+			517.1	86.99	14	15	0	0	1	
+			500.1	90.88	16	16	0	1	0	
+			557.6	66.19	14	14	0	1	1	
+			554.2	77.35	16	16	1	0	0	
+			632.6	104.6	14	14	1	0	1	
+			493.8	88.82	16	16	1	1	0	
+			545.3	77.65	15	15	1	1	1	
+										
+										
+			ggsc_score	ggsi_score	glsc_score	glsi_Score	lgsc_Score	lgsi_Score	llsc_Score	llsi_Score
+			481.7	517.1	500.1	557.6	554.2	632.6	493.8	545.3
+			0.94	0.94	1.00	0.88	1.00	0.88	1.00	0.94

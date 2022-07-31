@@ -1,0 +1,5 @@
+SUMMARY DATA
+
+Total number of data points : 122
+Number of RTs removed       : 5
+Percentage of RTs removed   : 4.09836%

@@ -1,0 +1,17 @@
+Média de SCor	Rótulos de Coluna														
+	Global		Global Total	Local		Local Total	Total geral								
+Rótulos de Linha	GS	LS		GS	LS										
+Cong	1,00	1,00	1,00	1,00	0,94	0,97	0,98								
+Incon	1,00	1,00	1,00	1,00	1,00	1,00	1,00								
+Total geral	1,00	1,00	1,00	1,00	0,97	0,98	0,99								
+															
+															
+rt	SDev	CCor	UCor					ggsc_score	ggsi_score	glsc_score	glsi_Score	lgsc_Score	lgsi_Score	llsc_Score	llsi_Score
+605.8	144.9	16	16	0	0	0		605,80	621,40	589,10	662,40	675,10	643,60	562,70	537,50
+621.4	100.9	16	16	0	0	1		1,00	1,00	1,00	1,00	1,00	1,00	0,94	1,00
+589.1	72.23	14	16	0	1	0									
+662.4	90.45	16	16	0	1	1									
+675.1	132.9	15	16	1	0	0									
+643.6	99.31	16	16	1	0	1									
+562.7	72.58	14	15	1	1	0									
+537.5	117.6	14	16	1	1	1									

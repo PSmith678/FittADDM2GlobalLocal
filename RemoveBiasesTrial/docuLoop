@@ -1,0 +1,8 @@
+% For loop for initDocu
+
+initFitting
+N = 79;
+
+for i = 44:N
+initDocu(i, 0, @(docu) set_ADDM(docu));
+end

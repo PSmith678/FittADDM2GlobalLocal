@@ -3,8 +3,8 @@
 #SBATCH --job-name=Test
 #SBATCH --account=heinkedg-esrc-nsf
 #SBATCH --time 100:0:0
-#SBATCH --qos castles
-#SBATCH --array 44-79
+#SBATCH --qos castlespriority1
+#SBATCH --array 1-40
 #SBATCH --cpus-per-task=12
 #SBATCH --output=Test-%a.out
 #SBATCH --error=Test-%a.err
@@ -33,5 +33,5 @@ cd(docuFold)
 addpath(genpath('OKDE4DEMCMC'));
 initFitting;
 runFitting(idx);
-calcMAP(idx)
+
 EOF

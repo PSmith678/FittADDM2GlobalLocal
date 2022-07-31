@@ -1,0 +1,18 @@
+function customPriorExample ()
+%%
+% A posterior sampling example In this case there's 2 parameters.
+% First, parameter is normally distributed and a second parameter has a
+% skewed prior.
+%
+
+dummyFunction = @(x)log(mvnpdf(x));
+nPars = 1;
+nGenerations = [10,100];
+mu = 0.5;
+cov = 2;
+customPrior = @(x)mixedPrior(x);
+customRange = @()randn(1)*cov+mu;
+fprintf('\nTrying the best search sampling combined with custom multivariate function as a prior\n');
+[a,b,acc,post,fits] = de_mcmc(@(evalPars) feval(dummyFunction,evalPars),{nPars,customPrior},'customPrior', customRange, 'nGenerations',nGenerations);
+
+end
