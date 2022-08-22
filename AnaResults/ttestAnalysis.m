@@ -1,4 +1,4 @@
-function ttests = ttestAnalysis(nParticipants)
+function [ttests] = ttestAnalysis(nParticipants)
 % t-tests on each parameter to compare the 'low' and 'high' AQ groups.
 % The output ttests is a structure where each field is an item that ttests
 % were conducted on, in these fields are the results from these ttests.
@@ -86,6 +86,7 @@ for iParam = 1:nParam
     end
 end
 
+
 if ttests.differenceBetweenSaliencyParameters.Decision == 1
    sig = [sig, "differenceBetweenSaliencyParameters"];
 end 
@@ -96,26 +97,40 @@ for iPlot = 1:length(sig)
         subplot(1, length(sig), iPlot)
        diff = bar(categorical({'High AQ', 'Low AQ'}), ...
             [mean(mapParticipantsHighAQParams.L2 - mapParticipantsHighAQParams.L1), mean(mapParticipantsLowAQParams.L2 - mapParticipantsLowAQParams.L1)], FaceColor="flat" );
+       hold on 
+        errlow =[std(mapParticipantsHighAQParams.L2 - mapParticipantsHighAQParams.L1), std(mapParticipantsLowAQParams.L2 - mapParticipantsLowAQParams.L1)];
+        er = errorbar(categorical({'High AQ', 'Low AQ'}), [mean(mapParticipantsHighAQParams.L2 - mapParticipantsHighAQParams.L1), mean(mapParticipantsLowAQParams.L2 - mapParticipantsLowAQParams.L1)], errlow, errlow);
+        er.Color = [0 0 0];                            
+        er.LineStyle = 'none';  
+
+        hold off
        set(gca, Fontsize = 14)
        diff.CData(1, :) = [0.8500 0.3250 0.0980];
        diff.CData(2, :) = [0 0.4470 0.7410];
         title("L2 - L1")
-        xlabel('AQ Group')
-        ylabel('Average Parameter Value')
+        xlabel('AQ Group', FontSize=15)
+        ylabel('Average Parameter Value', FontSize=15)
 
 
     else
         subplot(1, length(sig), iPlot)
         b = bar(categorical({'High AQ', 'Low AQ'}), [mean(mapParticipantsHighAQParams.(sig(iPlot))), mean(mapParticipantsLowAQParams.(sig(iPlot)))], FaceColor="flat");
         title(string(sig(iPlot)))
+        hold on 
+        errlow =[std(mapParticipantsHighAQParams.(sig(iPlot))), std(mapParticipantsLowAQParams.(sig(iPlot)))];
+        er = errorbar(categorical({'High AQ', 'Low AQ'}), [mean(mapParticipantsHighAQParams.(sig(iPlot))), mean(mapParticipantsLowAQParams.(sig(iPlot)))], errlow, errlow);
+        er.Color = [0 0 0];                            
+        er.LineStyle = 'none';  
+
+        hold off
         set(gca, Fontsize = 14)
         b.CData(1, :) = [0.8500 0.3250 0.0980];
         b.CData(2, :) = [0 0.4470 0.7410];
-        xlabel('AQ Group')
-        ylabel('Average Parameter Value')
+        xlabel('AQ Group', FontSize=15)
+        ylabel('Average Parameter Value', FontSize=15)
 
     end
 end
-sgtitle("Bar Charts Comparing the Average Parameter Values Across the High and Low AQ Groups for the Statistically Significant Parameters")
+sgtitle("Bar Charts Comparing the Average Parameter Values Across the High and Low AQ Groups for the Statistically Significant Parameters", FontSize=18)
 
 end

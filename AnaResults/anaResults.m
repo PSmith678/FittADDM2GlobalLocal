@@ -72,7 +72,7 @@ end
 
 bar(1:8, Err);
 xticklabels(docu.data.selector.nCondLabel);
-ylim([0 1]);hold on;
+ylim([0 0.3]); title('Real and Predicted Error Rates');hold on;
 
 
 %% Acceptance Rate
@@ -83,8 +83,8 @@ plot(501:3000-1,docu.post.res(iCond).ar_post(501:end),'k-','LineWidth',2);
 title('Acceptance Rate')
 
 end
-subplot(plotDim(1), plotDim(2), plotGrid(iCond, nParam + 11))
-title(sprintf('Gof =  %f', like(iCond)));
+%subplot(plotDim(1), plotDim(2), plotGrid(iCond, nParam + 11))
+%title(sprintf('Gof =  %f', like(iCond)));
 drawnow
 sgtitle(sprintf('Participant %d with an AQ score of %d', uid, docu.data.selector.AQscore))
 end

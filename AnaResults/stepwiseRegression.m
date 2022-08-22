@@ -53,23 +53,25 @@ end
 
 % Each column is a predictor for our stepwise regression model.
 predictors = [];
-for iParam = 1:nParam
-predictors = [predictors; mapParticipantsParams.(params{iParam})];
-end 
-predictors = predictors';
 
-predictors(:, 14) = mapParticipantsParams.L2 - mapParticipantsParams.L1;
+%for iParam = 1:nParam
+%predictors = [predictors; mapParticipantsParams.(params{iParam})];
+%end 
+%predictors = predictors';
+
+predictors(:, 1) = mapParticipantsParams.Threshold;
+predictors(:, 2) = mapParticipantsParams.L2 - mapParticipantsParams.L1;
 
 % Step wise regression model to find which predict AQ score
 [b,se,pval,finalmodel,stats] = stepwisefit(predictors, AQvector');
 
-y = stats.intercept+predictors(:,finalmodel)*b(finalmodel);
+%y = stats.intercept+predictors(:,finalmodel)*b(finalmodel);
 
 
-plot(predictors(:, finalmodel), y)
-xlabel('Difference in Saliency Parameters (L2 - L1)')
-ylabel("AQ score Prediction")
-title("A Plot Showing the Stepwise Regression Fit (to AQ Score) of the Variable that was Included in the Final Model")
+%plot(predictors(:, finalmodel), y)
+%xlabel('Difference in Saliency Parameters (L2 - L1)', FontSize=14)
+%ylabel("AQ score Prediction", FontSize=14)
+%title("A Plot Showing the Stepwise Regression Fit (to AQ Score) of the Variable that was Included in the Final Model")
 %hold on 
 %scatter(predictors(:, finalmodel), AQvector)
 end

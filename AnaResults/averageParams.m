@@ -77,29 +77,29 @@ saliency2Avg = mean(saliency2);
 
 figure()
 subplot(1, 3, 1)
-errorbar(categorical({'Global Task', 'Local Task'}), [rate2Avg, rate3Avg], err1rates, "Marker", "x", color='b')
+plot(categorical({'Global Task', 'Local Task'}), [rate2Avg, rate3Avg], "Marker", "x", color='b')
 hold on 
-errorbar(categorical({'Global Task', 'Local Task'}), [rate1Avg, rate4Avg], err2rates, "Marker","x", color='r')
-xlabel('Task (Glocal/Local)')
-ylabel('Rate Values')
+plot(categorical({'Global Task', 'Local Task'}), [rate1Avg, rate4Avg], "Marker","x", color='r')
+xlabel('Task (Glocal/Local)', FontSize=15)
+ylabel('Rate Values', FontSize=15)
 legend('Target Salient', 'Distractor Salient')
-title('The averages of the four assumed rates across the participants', FontSize=9)
+title('The Averages of the Four Rates Across the Participants', FontSize=11.5)
 
 
 subplot(1, 3, 2)
-errorbar(categorical({'Global Task', 'Local Task'}), [bias2Avg, bias3Avg], err1biases, "Marker","x", color='b')
+plot(categorical({'Global Task', 'Local Task'}), [bias2Avg, bias3Avg], "Marker","x", color='b')
 hold on
 plot(categorical({'Global Task', 'Local Task'}), [bias1Avg, bias4Avg], "Marker","x", color='r')
-xlabel('Task (Global/Local)')
-ylabel('Bias Values')
+xlabel('Task (Global/Local)', 'FontSize',15)
+ylabel('Bias Values', 'FontSize',15)
 legend('Target Salient', 'Distractor Salient')
-title('The averages of the four assumed biases across the participants', FontSize=9)
+title('The Averages of the Four Biases Across the Participants', FontSize=11.5)
 
 subplot(1, 3, 3)
 plot(categorical({'L1', 'L2'}), [saliency1Avg, saliency2Avg], "Marker","x", color='g')
-xlabel('Saliency Parameters (L1 & L2)')
-ylabel('Saliency Parameter Values')
-title('The averages of the two assumed saliency parameters across the participants', FontSize=9)
+xlabel('Saliency Parameters (L1 & L2)', 'FontSize',15)
+ylabel('Saliency Parameter Values', FontSize=15)
+title('The Averages of the L1 and L2 Across the Participants', FontSize=11.5)
 
 
 % column = task

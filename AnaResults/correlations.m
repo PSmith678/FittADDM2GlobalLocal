@@ -13,7 +13,7 @@ subjects = readcell(path, "Sheet", "Sheet4");
 subjects = subjects(4:end, 1);
 subjects = cell2mat(subjects);
 
-params = {'rate1', 'rate2', 'rate3', 'rate4', 'bias1', 'bias2', 'bias3', 'bias4', 'L1', 'L2', 'Threshold', 'NonDecisionTime', 'IOR'};
+params = {'rate1', 'rate2', 'rate3', 'rate4', 'bias1', 'bias2', 'bias3', 'bias4', 'L1', 'L2', 'Threshold', 'NDT', 'IOR'};
 nParam = length(params);
 mapParticipants = [];
 mapParticipantsParams = struct();
@@ -74,11 +74,20 @@ for iPlot = 1 : nParam
     xlim([min(AQvector) max(AQvector)]);
     ylim([min(mapParticipantsParams.(params{counter})) max(mapParticipantsParams.(params{counter}))]);
     string = {sprintf('corr = %g\np = %g', pValCorr(iPlot, 2), pValCorr(iPlot, 1))};
-    text(max(xlim), max(ylim), string, FontWeight="bold", FontSize=9, VerticalAlignment="top", HorizontalAlignment="right");
-    xlabel('AQ Score')
-    ylabel(sprintf('%s Values', params{counter}))
-    title(sprintf('%s', params{counter}))
+    text(max(xlim), max(ylim), string, FontWeight="bold", FontSize=11.5, VerticalAlignment="top", HorizontalAlignment="right");
+    xlabel('AQ Score', 'FontSize',12)
+    ylabel(sprintf('%s Values', params{counter}), FontSize=12)
+    title(sprintf('%s', params{counter}), FontSize=12)
+    
+   % Trend line
+    p = polyfit(AQvector,...
+     mapParticipantsParams.(params{counter}), 1);
+    yfit = p(1)*AQvector + p(2);
+    
+    plot(AQvector, yfit, "Color", [0 0 0]);
+    
     counter = counter + 1;
+
 end 
 
 % Plot L2-L1 against AQ score
@@ -87,17 +96,22 @@ for iParticipant = 1:length(mapParticipants)
     scatter(AQvector(iParticipant),...
         mapParticipantsParams.L2(iParticipant) - mapParticipantsParams.L1(iParticipant), MarkerEdgeColor=[0.9290 0.6940 0.1250], LineWidth=0.25)
     hold on
+    
 end
 xlim([min(AQvector) max(AQvector)]);
 ylim([min(mapParticipantsParams.L2 - mapParticipantsParams.L1) max(mapParticipantsParams.L2 - mapParticipantsParams.L1)]);
 string = {sprintf('corr = %g\np = %g', pValCorr(end, 2), pValCorr(end, 1))};
-text(max(xlim), max(ylim), string, FontWeight="bold", FontSize=9, VerticalAlignment="top", HorizontalAlignment="right");
-xlabel('AQ Score')
-xlabel('AQ Score')
-ylabel("L2 - L1 Values")
-title("L2 - L1")
+text(max(xlim), max(ylim), string, FontWeight="bold", FontSize=11.5, VerticalAlignment="top", HorizontalAlignment="right");
+xlabel('AQ Score', FontSize=12)
+ylabel("L2 - L1 Values", FontSize=12)
+title("L2 - L1", FontSize=12)
 
-sgtitle('Plots Showing the Parameter Values Against AQ Score')
+p = polyfit(AQvector,...
+    mapParticipantsParams.L2 - mapParticipantsParams.L1, 1);
+yfit = p(1)*AQvector + p(2);
+plot(AQvector, yfit, "Color", [0 0 0]);
+
+sgtitle('Plots Showing the Parameter Values Against AQ Score for the Analysed Participants', FontSize=16)
 
 
 end

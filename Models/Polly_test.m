@@ -1,4 +1,4 @@
-param = [0.015 0.025 0.025 0.015 0.01 0.01 0.01 0.01 0.004 0.0042 2 110 0.0085];
+param = [0.015 0.025 0.025 0.015 0.01 0.01 0.01 0.01 0.007 0.008 3.5 110 0.0085];
 simDat = run_ADDM(param, 1000);
 
 %[rate1, rate2, rate3, rate4, bias1, bias2, bias3, bias4,
@@ -13,15 +13,15 @@ gray = '#D3D3D3';
 blue = '#0072BD';
 colours = {gray, gray, blue, gray, gray, gray, gray, blue};
 subplot(2,1,1)
-xlim([0 9])
+%xlim([0 9])
 xTimes = 1:8;
 b = bar(xTimes, yTimes);
 
-xlabel('Condition Number')
-ylabel('Mean Reaction Times (ms)')
+xlabel('Condition Number', FontSize=14)
+ylabel('Mean Reaction Times (ms)', FontSize=14)
 
-title('Mean Reaction Times of Correct Responses for each Condition Over 1000 trials')
-set(gca, FontSize = 12)
+title('Mean Reaction Times of Correct Responses for each Condition Over 1000 trials', FontSize=14)
+
 
 
 yError = nan(1,8);
@@ -31,7 +31,6 @@ end
 subplot(2,1,2)
 xlim([0 9])
 xError = 1:8;
-
 bar(xError, yError);
 
 xlabel('Condition Number')
@@ -39,8 +38,8 @@ ylabel('Number of Errors')
 
 title('Number of Errors in each Condition Over 1000 trials')
 
-sgtitle('Simulated Data Showing the Mean Reaction Times and Error Rates over 1000 trials', FontSize = 16)
-set(gca, FontSize = 12)
+sgtitle('Simulated Data Showing the Mean Reaction Times and Error Rates over 1000 trials', FontSize = 20)
+set(gca, FontSize = 14)
 %yTimes = nan(1,8);
 %for iCond = 1:8
    % yTimes(iCond) = median(simDat(iCond).rt_res1);
